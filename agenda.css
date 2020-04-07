@@ -1,0 +1,137 @@
+html
+    {
+        margin: 0;
+    }
+body
+    {
+        margin: 0;
+    }
+h1
+    {
+        font-size: 40px;
+    }
+p
+    {
+        font-size: 15px;
+        margin: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 10px;
+        background-color: cadetblue;
+    }
+/* Agenda */
+/* Header */
+.Hagenda
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.Hagenda nav
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+.Hagenda section
+    {
+        display: flex;
+        justify-content: center;
+        font-style: italic;
+    }
+/* Main */
+.Magenda
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+table
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid black;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        border-spacing: 0;
+    }
+thead
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+thead tr
+    {
+        display: flex;
+        width: 100%;
+    }
+thead th
+    {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+tbody th
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: 1px solid blueviolet;
+    }
+tbody tr
+    {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+    }
+tbody tr th :nth-child(1) /*ligne jour */
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: coral;
+        margin: 0;
+        height: 10vh;
+        width: 100%;
+    }
+tbody tr td:nth-child(1) /* colonne heure*/
+    {
+        background-color: brown;
+    }
+td
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
+        width: 100%;
+        height: 20vh;
+    }
+.bouton
+    {
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+    }
+/* Footer */
+footer  
+    {
+        display: flex;
+        border-top: 1px solid black;
+    }
+footer nav
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
