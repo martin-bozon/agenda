@@ -1,6 +1,7 @@
 html
     {
         margin: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 body
     {
@@ -12,14 +13,7 @@ h1
     }
 p
     {
-        font-size: 15px;
         margin: 0;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        border-radius: 10px;
-        background-color: cadetblue;
     }
 /* Agenda */
 /* Header */
@@ -27,18 +21,52 @@ p
     {
         display: flex;
         flex-direction: column;
+        /* position: fixed; */
+        width: 100%;
+        height: 35vh;
+        border-bottom: 1px solid black;
+        background-color: gray;
+        z-index: 1000;
     }
 .Hagenda nav
     {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        height: 60%;
+        background-color: rgb(172, 172, 172);
+    }
+/* hover fleche */
+.Hagenda nav a #HaGhover
+    {
+        display: none;
+    }
+.Hagenda nav a #HaDhover
+    {
+        display: none;
+    }
+.Hagenda a:hover #HaGhover
+    {
+        display: block;
+    }
+.Hagenda a:hover #HaDhover
+    {
+        display: block;
+    }
+.Hagenda a:hover #HaG
+    {
+        display: none;
+    }
+.Hagenda a:hover #HaD
+    {
+        display: none;
     }
 .Hagenda section
     {
         display: flex;
         justify-content: center;
         font-style: italic;
+        height: 40%;
     }
 /* Main */
 .Magenda
@@ -53,17 +81,15 @@ table
         display: flex;
         flex-direction: column;
         width: 100%;
-        border-top: 1px solid black;
-        margin-left: 3vw;
-        margin-right: 3vw;
         border-spacing: 0;
     }
 thead
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         justify-content: space-around;
+        align-items: center;
     }
 thead tr
     {
@@ -78,9 +104,34 @@ thead th
         justify-content: space-around;
         align-items: center;
     }
+.Magenda a #flecheGhover
+    {
+        display: none;
+    }
+.Magenda a #flecheDhover
+    {
+        display: none;
+    }
+.Magenda a:hover #flecheGhover
+    {
+        display: block;
+    }
+.Magenda a:hover #flecheDhover
+    {
+        display: block;
+    }
+.Magenda a:hover #flecheG
+    {
+        display: none;
+    }
+.Magenda a:hover #flecheD
+    {
+        display: none;
+    }
 tbody th
     {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
         border: 1px solid blueviolet;
@@ -89,7 +140,6 @@ tbody tr
     {
         display: flex;
         justify-content: center;
-        /* align-items: center; */
         width: 100%;
     }
 tbody tr th :nth-child(1) /*ligne jour */
@@ -97,10 +147,13 @@ tbody tr th :nth-child(1) /*ligne jour */
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: coral;
         margin: 0;
         height: 10vh;
         width: 100%;
+    }
+tbody th
+    {
+        /* background-color: chartreuse; */
     }
 tbody tr td:nth-child(1) /* colonne heure*/
     {
@@ -116,13 +169,37 @@ td
         width: 100%;
         height: 20vh;
     }
+td a
+    {
+        width: 100%;
+        height: 100%;
+    }
+td a:hover
+    {
+        background-color: rgba(50, 138, 179, 0.76);
+    }
+tbody td p
+    {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 10px;
+        background-color: cadetblue;
+    }
 .bouton
     {
         margin-top: 5vh;
         margin-bottom: 10vh;
+        border-radius: 10px;
+    }
+.bouton a
+    {
+        text-decoration: none;
+        color: black;
     }
 /* Footer */
-footer  
+footer
     {
         display: flex;
         border-top: 1px solid black;

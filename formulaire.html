@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="agenda.css"/>
 </head>
 <body>
-    
+    <header class="Hagenda">
+        <nav>
+            <a href="agenda.html">Retour</a>
+            <h1>Avril</h1>
+        </nav>
+        <section>
+            <h2>Ajouter un événement</h2>
+        </section>
+    </header>   
+
+    <main>
+        <form action="agenda.html">
+            <section>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date"/>
+            </section>
+            <section>
+                <label for="time">Horaires</label>
+                <input type="time" name="time" id="time"/>
+            </section>
+            <section>
+                <label for="sujet">Titre</label>
+                <input type="text" name="sujet" id="sujet" placeholder="Travail"/>
+            </section>
+            <section>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="5" cols="33" placeholder="Rendez-vous avec..."></textarea>
+            </section>
+            <section>
+                <label for="catégorie">Catégories</label>
+                <input type="text" name="categorie" id="categorie" placeholder="Professionel"/>
+            </section>
+            <section>
+                <input type="submit" value="Ajouter"/>
+            </section>
+        </form>
+    </main>
 </body>
 </html>
