@@ -75,7 +75,7 @@ hr
 .Magenda
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         background:linear-gradient(grey,60%, orange)
