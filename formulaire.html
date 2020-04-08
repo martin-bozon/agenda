@@ -23,32 +23,32 @@
             <h2>Date</h2>
             <section class="DF">
                 <section>
-                    <label for="debutD">Début</label>
-                    <input type="date" name="debutD" id="debutD"/>
+                    <label for="debutD" class="oblig">Début</label>
+                    <input type="date" name="debutD" id="debutD" required/>
                 </section>
                 <section>
-                    <label for="finD">Fin</label>
-                    <input type="date" name="finD" id="finD"/>  
+                    <label for="finD" class="oblig">Fin</label>
+                    <input type="date" name="finD" id="finD" required/>  
                 </section>
             </section>
             <h2>Horaires</h2>
             <section class="DF">
                 <section>
-                    <label for="debutH">Début</label>
-                    <input type="time" name="debutH" id="debutH"/>
+                    <label for="debutH" class="oblig">Début</label>
+                    <input type="time" name="debutH" id="debutH" required/>
                 </section>
                 <section>
-                    <label for="finH">Fin</label>
-                    <input type="time" name="finH" id="finH"/>
+                    <label for="finH" class="oblig">Fin</label>
+                    <input type="time" name="finH" id="finH" required/>
                 </section>
             </section>
             <section>
-                <label for="sujet"><h2>Titre</h2></label>
-                <input type="text" name="sujet" id="sujet" placeholder="Travail"/>
+                <label for="sujet"><h2 class="oblig">Titre</h2></label>
+                <input type="text" name="sujet" id="sujet" placeholder="Travail" required/>
             </section>
             <section>
-                <label for="catégorie"><h2>Catégories</h2></label>
-                <input type="text" name="categorie" id="categorie" placeholder="Professionel"/>
+                <label for="catégorie"><h2 class="oblig">Catégories</h2></label>
+                <input type="text" name="categorie" id="categorie" placeholder="Professionel" required/>
             </section>
             <section>
                 <label for="description"><h2>Description</h2></label>
@@ -57,10 +57,12 @@
             <section>
                 <input type="submit" value="Ajouter" class="bouton"/>
             </section>
+            <p class="oblig">Champs obligatoires</p>
         </form>
     </main>
 
     <footer>
+        <a href="agenda.html">Retour</a>
         <a href="https://github.com/martin-bozon" target="_blank" id="git"><img src="image/logogitblk.png"
             alt="logo git hub noir" id="logonoir" /><img src="image/logogitorange.png" alt="logo git hub orange"
             id="logoblanc" /> Martin Bozon</a>

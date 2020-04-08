@@ -185,7 +185,7 @@ td
 .bouton
     {
         margin-top: 5vh;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         border-radius: 10px;
         outline: none;
     }
@@ -344,11 +344,16 @@ input:focus, textarea:focus
     {
         background-color: orange;
     }
+.oblig:after
+    {
+        content: " *";
+        color: red;
+    }
 /* Footer */
 footer
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         height: 15vh;
         border-top: 1px solid black;
