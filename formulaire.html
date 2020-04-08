@@ -7,42 +7,63 @@
     <link rel="stylesheet" href="agenda.css"/>
 </head>
 <body>
-    <header class="Hagenda">
+    <header id="Hform">
         <nav>
-            <a href="agenda.html">Retour</a>
             <h1>Avril</h1>
+            <a href="agenda.html">Retour</a>
         </nav>
+        <hr>
         <section>
             <h2>Ajouter un événement</h2>
         </section>
     </header>   
 
-    <main>
+    <main id="Mform">
         <form action="agenda.html">
-            <section>
-                <label for="date">Date</label>
-                <input type="date" name="date" id="date"/>
+            <h2>Date</h2>
+            <section class="DF">
+                <section>
+                    <label for="debutD">Début</label>
+                    <input type="date" name="debutD" id="debutD"/>
+                </section>
+                <section>
+                    <label for="finD">Fin</label>
+                    <input type="date" name="finD" id="finD"/>  
+                </section>
+            </section>
+            <h2>Horaires</h2>
+            <section class="DF">
+                <section>
+                    <label for="debutH">Début</label>
+                    <input type="time" name="debutH" id="debutH"/>
+                </section>
+                <section>
+                    <label for="finH">Fin</label>
+                    <input type="time" name="finH" id="finH"/>
+                </section>
             </section>
             <section>
-                <label for="time">Horaires</label>
-                <input type="time" name="time" id="time"/>
-            </section>
-            <section>
-                <label for="sujet">Titre</label>
+                <label for="sujet"><h2>Titre</h2></label>
                 <input type="text" name="sujet" id="sujet" placeholder="Travail"/>
             </section>
             <section>
-                <label for="description">Description</label>
-                <textarea name="description" id="description" rows="5" cols="33" placeholder="Rendez-vous avec..."></textarea>
-            </section>
-            <section>
-                <label for="catégorie">Catégories</label>
+                <label for="catégorie"><h2>Catégories</h2></label>
                 <input type="text" name="categorie" id="categorie" placeholder="Professionel"/>
             </section>
             <section>
-                <input type="submit" value="Ajouter"/>
+                <label for="description"><h2>Description</h2></label>
+                <textarea name="description" id="description" rows="5" cols="33" placeholder="Rendez-vous avec..."></textarea>
+            </section>
+            <section>
+                <input type="submit" value="Ajouter" class="bouton"/>
             </section>
         </form>
     </main>
+
+    <footer>
+        <a href="https://github.com/martin-bozon" target="_blank" id="git"><img src="image/logogitblk.png"
+            alt="logo git hub noir" id="logonoir" /><img src="image/logogitorange.png" alt="logo git hub orange"
+            id="logoblanc" /> Martin Bozon</a>
+    </footer>
 </body>
 </html>
