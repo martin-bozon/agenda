@@ -1,7 +1,7 @@
 html
     {
         margin: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     }
 body
     {
@@ -28,12 +28,14 @@ html::-webkit-scrollbar
 html::-webkit-scrollbar-track 
     {
         background-color: white;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.842);
         -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.842); 
     }
      
 html::-webkit-scrollbar-thumb 
     {
         background-color: grey;
+        box-shadow: inset 0 0 10px green;
         -webkit-box-shadow: inset 0 0 10px green; 
     }          
 tbody::-webkit-scrollbar 
@@ -44,6 +46,7 @@ tbody::-webkit-scrollbar
 tbody::-webkit-scrollbar-track 
     {
         background-color: gray;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.849) ;
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.849); 
         border-radius: 20px;
     }
@@ -52,6 +55,7 @@ tbody::-webkit-scrollbar-thumb
     {
         border-radius: 20px;
         background-color: white;
+        box-shadow: inset 0 0 6px rgb(255, 166, 0);
         -webkit-box-shadow: inset 0 0 6px rgb(255, 166, 0); 
     }          
 /* Agenda */
@@ -207,6 +211,7 @@ tbody a:hover
     {
         width: 10vw;
         margin-left: 3vw;
+        border-radius: 20px;
         border: none;
     }
 tbody tr td:nth-child(1) /*colonne heure*/
@@ -232,6 +237,13 @@ tbody tr td:nth-child(1) /*colonne heure*/
         height: 50%;
         background-color: rgba(252, 168, 0, 0.322);
         border-radius: 20px;
+    }
+.choixcate section
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
     }
 td
     {
@@ -264,17 +276,35 @@ td
 .Travail
     {
         background-color: rgb(105, 180, 109);
-        border: 1px solid rgb(2, 18, 255);
+        border: 1px solid rgb(238, 255, 2);
     }
 .Loisir
     {
         background-color: paleturquoise;
-        border: 1px solid rgb(255, 251, 2);
+        border: 1px solid rgb(6, 2, 255);
     }
 .Sport
     {
         background-color: plum;
-        border: 1px solid rgb(2, 255, 44);
+        border: 1px solid rgb(234, 2, 255);
+    }
+#Travail
+    {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 20px;
+    }
+#Sport
+    {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 20px;
+    }
+#Loisir
+    {
+        padding-left: 1vw;
+        padding-right: 1vw;
+        border-radius: 20px;
     }
 .optionT
     {
