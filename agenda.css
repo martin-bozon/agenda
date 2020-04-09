@@ -20,6 +20,40 @@ hr
         width: 50%;
         border: 1px solid orange;
     }
+html::-webkit-scrollbar 
+    {
+        width: 1vw;
+    }
+     
+html::-webkit-scrollbar-track 
+    {
+        background-color: white;
+        -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.842); 
+    }
+     
+html::-webkit-scrollbar-thumb 
+    {
+        background-color: grey;
+        -webkit-box-shadow: inset 0 0 10px green; 
+    }          
+tbody::-webkit-scrollbar 
+    {
+        width: 1vw;
+    }
+     
+tbody::-webkit-scrollbar-track 
+    {
+        background-color: gray;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.849); 
+        border-radius: 20px;
+    }
+     
+tbody::-webkit-scrollbar-thumb 
+    {
+        border-radius: 20px;
+        background-color: white;
+        -webkit-box-shadow: inset 0 0 6px rgb(255, 166, 0); 
+    }          
 /* Agenda */
 /* Header */
 .Hagenda
@@ -130,26 +164,31 @@ table
         display: flex;
         flex-direction: column;
         width: 95%;
+        height: 80vh;
         border: 1px solid black;
         border-spacing: 0;
         margin-top: 5vh;
-        border-radius: 20px;
+        margin-bottom: 5vh;
+        margin-right: 1vw;
+        border-radius: 10px;
         background:linear-gradient(white, 70%, black)
     }
-.jours th:not(#vide)
+.jours th:not(#vide) /* ligne jour*/
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 10vw;
         border-radius: 20px;
-        border: 1px solid blueviolet;
-        background-color: rgb(165, 95, 3);
+        border: 1px solid black;
+        background-color: rgba(13, 0, 128, 0.568);
     }
 tbody
     {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        overflow: auto;
+        margin-left: 3vw;
     }
 tbody h2
     {
@@ -166,6 +205,8 @@ tbody a:hover
     }
 #vide
     {
+        width: 10vw;
+        margin-left: 3vw;
         border: none;
     }
 tbody tr td:nth-child(1) /*colonne heure*/
@@ -173,11 +214,31 @@ tbody tr td:nth-child(1) /*colonne heure*/
         background-color: #D8D8D7;
         border: 1px solid black;
     }
+.menu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        height: 60vh;
+    }
+.choixcate
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 50%;
+        background-color: rgba(252, 168, 0, 0.322);
+        border-radius: 20px;
+    }
 td
     {
         text-align:center;
-        border: 1px solid red;
-        width: 150px;
+        border-top: 1px solid red;
+        border-bottom: 1px solid red;
+        width: 10vw;
         height: 10vh;
         border-radius: 20px;
         background-color: white;
